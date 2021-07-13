@@ -8,30 +8,6 @@ function exibir() {
      ordem3 = 0;
 
 
-   /* if( n1 <= n2 && n1 <= n3 ){
-       document.write('O número na posição 1 é: ' + n1 +'<br>');
-    } else if( n2 <= n1 && n2 <= n3){
-        document.write('O número na posição 1 é: ' + n2 + '<br>')
-    } else{
-        document.write('O número na posição 1 é: ' + n3 +'<br>');
-    }
-   
-    if(n1 >= n2 && n1 >= n3){
-        document.write('O número na posição 2 é: ' + n1 +'<br>');
-    } else if(n2 >= n1 && n2 >= n3){
-        document.write('O número na posição 2 é: '+ n2 +'<br>');
-    } else {
-        document.write('O número na posição 2 é: ' + n3 +'<br>');
-    }
-
-    if( n1 > n2 && n1 != n2 && n1 > n3 && n1 != n3 ){
-        document.write('O número na posição 3 é: ' + n1 +'<br>');
-    } else if(n2 > n1 && n2 != n1 && n2 > n3 && n2 != n3){
-        document.write('O número na posição 3 é: ' + n2 +'<br>');
-    } else{
-        document.write('O número na posição 3 é: ' + n3 +'<br> ');
-    }*/
-
 
     if (n1 < n2 && n1 < n3){
        document.write(' ' + ordem1 == n1 +'<br> ');
