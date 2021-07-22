@@ -1,48 +1,32 @@
-function ordemCrescente(n1,n2,n3,ordem1,ordem2,ordem3){
-    n1 = parseInt(n1);
-    n2= parseInt(n2);
-    n3=parseInt(n3);
-    ordem1 = parseInt(ordem1);
-    ordem2 = parseInt(ordem2);
-    ordem3 = parseInt(ordem3);
+var num1 = parseInt(prompt('Digite o valor de A'));
+num2 = parseInt(prompt('Digite o valor de B'));
+num3 = parseInt(prompt('Digite o valor de C'));
 
-    if(n1 <= n2 && n1 <= n3){
-        ordem1 = n1;
-    }
-    if(n2 <= n3){
-        ordem2 = n2;
-        ordem3 = n3;
-    }else{
-        ordem2 = n3;
-        ordem3 = n2;
-    }
-
-    if(n2 <= n3 && n2 <= num1){
-        ordem1 =n2;
-    }
-    if(n1 <= n3){
-        ordem2 = n1;
-        ordem3 = n3;
+if ( num1 < num2 && num1 < num3) {
+    document.write(num1 + '<br>');
+    if (num2 < num3) {
+        document.write( num2 + '<br>')
+        document.write(num3 + '<br>');
     } else{
-        ordem2 = n3;
-        ordem3 = n1;
+        document.write(num3 + '<br>');
+        document.write(num2 + '<br>');
     }
-    
-    if( n3 <= n1 && n3 <= n2){
-        ordem1 = n3;
+} else if( num2 < num3 && num2 < num1){
+    document.write(num2 + '<br>');
+    if ( num3 < num1) {
+        document.write(num3 + '<br>');
+        document.write(num1 + '<br>');
+    }else{
+        document.write(num1 + '<br>');
+        document.write(num3 + '<br>');
     }
-    if(n2 <= n1){
-        ordem2 = n1;
-        ordem3 = n2;
+} else{
+    document.write(num3 + '<br>');
+    if (num1 < num2) {
+        document.write(num1 + '<br>');
+        document.write(num2 + '<br>');
+    } else{
+        document.write(num2 + '<br>'); 
+        document.write(num1 + '<br>');
     }
-
-     return ordemCrescente(n1,n2,n3,ordem1,ordem2,ordem3);
-
-    
 }
-
-var n1 = prompt('Digite o número A');
-var n2 = prompt('Digite o número B');
-var n3 = prompt('Digite o número C');
-
-document.write('Os números em ordem crescente é: ' + ordem1 +', ' + ordem2 + ', ' + ordem3 +'');
